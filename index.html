@@ -1,5 +1,6 @@
 <html>
     <head>
+        <script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
         <!-- Latest compiled and minified CSS -->
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,6 +11,10 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+        <!-- Custom Scripts -->
+        <script src="script.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzcNfc1nUKuZvTqsvSgYhX6vplTutlPf8&callback=initMap"></script>
+
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -102,6 +107,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="location-div" class='row'>
+                <h2>Locations</h2>
+                <div id="map" class="col-md-10 col-md-offset-1"></div>
             </div>
             <div id="support-div" class='row'>
                 <h2>Support</h2>
